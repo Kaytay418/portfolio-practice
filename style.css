@@ -5,9 +5,9 @@
 }
 
 body {
-  display: block;
-  margin: 60px auto;
-  text-align: center;
+  margin: auto !important;
+  margin-top: 100px !important;
+  margin-bottom: 50px !important;
   max-width: 800px;
 }
 
@@ -18,11 +18,11 @@ h3 {
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 96px !important;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 48px !important;
 }
 
 h3 {
@@ -30,18 +30,40 @@ h3 {
   opacity: 0.7;
 }
 
-.nav-links {
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.navigation-links {
   display: flex;
   margin-top: 40px;
   justify-content: center;
 }
 
-.nav-links a {
+.navigation-links a {
   margin: 20px;
   padding: 20px 15px;
   border-radius: 4px;
   text-decoration: none;
+  text-transform: capitalize;
 }
+
+.link-button {
+  border: var(--primary-color);
+  border-radius: 4px;
+  margin: 0;
+  padding: 15px 15px;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  text-decoration: none;
+  color: white;
+}
+
 .contact-link {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
@@ -55,6 +77,8 @@ h3 {
 
 .homepage-link {
   color: var(--primary-color);
+  text-align: center;
+  display: block;
 }
 
 .about-p {
@@ -73,38 +97,55 @@ h3 {
 }
 
 .email-link {
+  display: flex;
+  justify-content: center;
   color: var(--primary-color);
   font-size: 20px;
   text-decoration: none;
 }
 
-@media (max-width: 415px) {
+.email-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
   h1 {
-    font-size: 60px;
+    font-size: 46px !important;
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 36px !important;
+    text-align: center !important;
   }
 
   h3 {
-    font-size: 20px;
-    max-width: 400px;
+    font-size: 16px !important;
     margin-top: 10px;
+    text-align: center !important;
   }
 
   a {
-    font-size: 15px;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    margin: 0 20px !important;
   }
 
-  .about-p {
+  p {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .about-paragraphs {
     display: block;
     margin: auto;
     font-size: 10px;
     padding: 10px;
   }
 
-  .about-p p {
+  .about-paragraphs p {
     margin: 10px;
+    text-align: center !important;
+    font-size: 18px;
   }
 }
